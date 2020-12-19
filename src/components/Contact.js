@@ -1,9 +1,9 @@
 import React from 'react';
 
-export default function About() {
+export default function Contact() {
   return (
     <div className="container mt200">
-      <h3>This is a Family Restaurant</h3>
+      <h1>Contact</h1>
     </div>
   );
 }

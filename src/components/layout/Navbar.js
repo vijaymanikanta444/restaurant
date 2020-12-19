@@ -24,7 +24,12 @@ export default function Navbar() {
           id="navbarsExampleDefault"
         >
           <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-            <li class="nav-item dropdown">
+            <li class="nav-item">
+              <a class="nav-link" href="/menu">
+                Menu
+              </a>
+            </li>
+            {/* <li class="nav-item dropdown">
               <a
                 class="nav-link dropdown-toggle"
                 href="#"
@@ -39,7 +44,7 @@ export default function Navbar() {
                 aria-labelledby="dropdown01"
               >
                 <li>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="/starter">
                     starters
                   </a>
                 </li>
@@ -59,14 +64,14 @@ export default function Navbar() {
                   </a>
                 </li>
               </ul>
-            </li>
+            </li> */}
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/about">
                 About
               </a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">
+              <a class="nav-link" href="/contact">
                 Contact
               </a>
             </li>

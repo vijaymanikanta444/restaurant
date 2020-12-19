@@ -66,6 +66,10 @@
   font-family: 'Bungee Outline', cursive;
 }
 
+.exo2 {
+  font-family: 'Exo 2', sans-serif;
+}
+
 .locate {
   display: flex;
   flex-direction: row;
@@ -116,10 +120,39 @@
   margin-top: 137px;
 }
 
+.mt250 {
+  margin-top: 250px;
+}
+
 .mt200 {
   margin-top: 200px;
 }
 
+.mt190 {
+  margin-top: 190px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mt50 {
+  margin-top: 50px;
+}
+
 .bb {
   border-bottom: 1px solid #f9ed22;
+}
+
+.containerSlide {
+  /* width: 80%; */
+  /* margin: auto; */
+  /* padding: 20px; */
+  /* margin-top: 180px; */
+  /* border: 2px solid #000000; */
+  /* border-radius: 50px; */
+}
+
+.iconFollow {
+  font-size: 30px;
 }
