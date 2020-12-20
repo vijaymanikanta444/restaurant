@@ -135,8 +135,8 @@ export default function Specials() {
       </div>
 
       <div className="cards">
-        {data[day].map((special) => (
-          <div className="card">
+        {data[day].map((special, i) => (
+          <div key={i} className="card">
             <Card.Img
               variant="top"
               height="200px"
@@ -150,7 +150,7 @@ export default function Specials() {
               <small className="text-muted">
                 <i
                   style={{ paddingRight: "5px", color: "green" }}
-                  class="fas fa-rupee-sign"
+                  className="fas fa-rupee-sign"
                 ></i>
                 <span
                   className="play"
@@ -162,7 +162,7 @@ export default function Specials() {
                   style={{ paddingLeft: "10px" }}
                   className={special.category == "veg" ? "green" : "red"}
                 >
-                  <i class="far fa-dot-circle"></i>
+                  <i className="far fa-dot-circle"></i>
                 </span>
               </small>
             </Card.Footer>

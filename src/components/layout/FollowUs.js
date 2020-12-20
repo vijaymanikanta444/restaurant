@@ -19,13 +19,13 @@ export default function FollowUs() {
         }}
       >
         <a href="https://www.facebook.com/" className="iconFollow">
-          <i class="fab fa-facebook" style={{ color: "#2E89ff" }}></i>
+          <i className="fab fa-facebook" style={{ color: "#2E89ff" }}></i>
         </a>
         <a href="https://twitter.com/?lang=en" className="iconFollow">
-          <i class="fab fa-twitter" style={{ color: "white" }}></i>
+          <i className="fab fa-twitter" style={{ color: "white" }}></i>
         </a>
         <a href="https://www.youtube.com/" className="iconFollow">
-          <i class="fab fa-youtube" style={{ color: "#ff0101" }}></i>
+          <i className="fab fa-youtube" style={{ color: "#ff0101" }}></i>
         </a>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import TextGradient from 'react-textgradient';
 
 export default function Header() {
@@ -7,7 +7,7 @@ export default function Header() {
       <nav className="navbar navbar-expand-md navbar-dark fixed-top container-fluid bg-dark bb">
         <div className="locate w80 ">
           <div className="p5">
-            <a class="navbar-brand p-l2 " href="/">
+            <a className="navbar-brand p-l2 " href="/">
               <img
                 className="round "
                 //   src="https://i.pinimg.com/originals/b1/77/87/b177879cded969777698b9d51c9ae212.gif"

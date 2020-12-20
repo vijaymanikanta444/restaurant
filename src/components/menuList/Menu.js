@@ -1,8 +1,8 @@
-import React, { Component } from 'react';
-import Desserts from './menuList/Desserts';
-import MainCourse from './menuList/MainCourse';
-import Shakes from './menuList/Shakes';
-import Starters from './menuList/Starters';
+import React, { Component } from "react";
+import Desserts from "./Desserts";
+import MainCourse from "./MainCourse";
+import Shakes from "./Shakes";
+import Starters from "./Starters";
 
 export default class Menu extends Component {
   render() {
