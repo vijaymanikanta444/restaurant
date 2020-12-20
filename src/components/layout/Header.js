@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 // import TextGradient from 'react-textgradient';
 
 export default function Header() {
@@ -30,7 +30,7 @@ export default function Header() {
           </div>
           <div>
             <div className="p-r4 white fs50 gradient">
-              <i className="fas fa-crown text-crown p-r1" />
+              <i className="fas fa-crown p-r1" />
               {/* ROYAL KITCHEN */}
             </div>
           </div>

@@ -59,17 +59,28 @@
 }
 
 .langar {
-  font-family: "Langar", cursive;
+  font-family: 'Langar', cursive;
 }
 
 .bungee {
-  font-family: "Bungee Outline", cursive;
+  font-family: 'Bungee Outline', cursive;
 }
 
 .exo2 {
-  font-family: "Exo 2", sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
+.nova-flat {
+  font-family: 'Nova Flat', cursive;
+}
+
+.alex-brush {
+  font-family: 'Alex Brush', cursive;
+}
+
+.play {
+  font-family: 'Play', sans-serif;
+}
 .locate {
   display: flex;
   flex-direction: row;
@@ -100,17 +111,13 @@
 }
 
 .gradient {
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  background: linear-gradient(
-    to right,
-    #ff9a01,
-    #ff9a01,
-    #c4bd7a,
-    #f70909,
-    #f70909
-  );
+  background: linear-gradient(to right, #ff9a01, #c4bd7a, #f70909);
+  -webkit-text-fill-color: transparent;
+  -webkit-background-clip: text;
+}
+
+.gradient1 {
+  background: linear-gradient(to right, #ff0000, #e8f8f5);
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -170,4 +177,40 @@
 
 .iconFollow {
   font-size: 30px;
+}
+
+.prl-10 {
+  padding: 0 10px;
+}
+
+.prl-20 {
+  padding: 0 20px;
+}
+
+.cards {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 80%;
+  margin: auto;
+}
+
+.card {
+  width: 250px;
+  padding: 5px;
+  margin: 20px 30px;
+  color: #000000;
+}
+
+.green {
+  color: green;
+}
+
+.red {
+  color: red;
+}
+
+.yellow {
+  color: yellow;
 }

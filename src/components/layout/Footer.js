@@ -1,18 +1,22 @@
-import React from "react";
+import React from 'react';
 
 export default function Footer() {
   return (
     <div className="App mt50">
       <div>
         <div className="bg p5">
-          <h3>ROYAL KITCHEN</h3>
+          <div className="fs25">
+            <i class="fas fa-crown"></i>
+            <span className="prl-20">ROYAL KITCHEN</span>
+            <i class="fas fa-crown"></i>
+          </div>
         </div>
         <br />
         <p>
           Vepagunta - Sabbavaram Rd, Visakhapatnam, Andhra-Pradesh.
           Pincode-531173 , India
           <br />
-          Restaurant: <strong class="ltr">+91-7075909775</strong> - Catering:{" "}
+          Restaurant: <strong class="ltr">+91-7075909775</strong> - Catering:{' '}
           <strong class="ltr">+91-7659922621</strong>
         </p>
         <div id="copyright">

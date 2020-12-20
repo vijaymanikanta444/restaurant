@@ -1,16 +1,7 @@
 import React, { useState } from 'react';
 import { Card } from 'react-bootstrap';
 
-export default function Specials() {
-  const [weekDays, setweekDays] = useState([
-    'Sunday',
-    'Monday',
-    'Tuesday',
-    'Wednesday',
-    'Thursday',
-    'Friday',
-    'Saturday',
-  ]);
+export default function Test() {
   const [data, setdata] = useState([
     {
       img:
@@ -68,17 +59,9 @@ export default function Specials() {
       category: 'veg',
     },
   ]);
-  const today = new Date();
-  console.log(today.toDateString());
-  console.log(data.length);
   return (
     <div className="mt200 App">
-      <div>
-        <h1 className="alex-brush fs50 yellow ">
-          {weekDays[today.getDay()]}
-          {`'s Specials`}
-        </h1>
-      </div>
+      <h1>Test</h1>
 
       <div className="cards">
         {data.map((special) => (
@@ -90,7 +73,7 @@ export default function Specials() {
               src={special.img}
             />
             <Card.Body>
-              <Card.Title className="exo2">{special.title}</Card.Title>
+              <Card.Title>{special.title}</Card.Title>
             </Card.Body>
             <Card.Footer>
               <small className="text-muted">
@@ -98,12 +81,7 @@ export default function Specials() {
                   style={{ paddingRight: '5px', color: 'green' }}
                   class="fas fa-rupee-sign"
                 ></i>
-                <span
-                  className="play"
-                  style={{ fontSize: '20px', color: 'black' }}
-                >
-                  {special.price}
-                </span>
+                <strong style={{ fontSize: '20px' }}>{special.price}</strong>
                 <span
                   style={{ paddingLeft: '10px' }}
                   className={special.category == 'veg' ? 'green' : 'red'}
