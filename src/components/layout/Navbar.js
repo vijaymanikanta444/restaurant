@@ -29,42 +29,6 @@ export default function Navbar() {
                 Menu
               </a>
             </li>
-            {/* <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown01"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Menu
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="dropdown01"
-              >
-                <li>
-                  <a class="dropdown-item" href="/starter">
-                    starters
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Food
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    Desserts
-                  </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
-                    shakes
-                  </a>
-                </li>
-              </ul>
-            </li> */}
             <li class="nav-item">
               <a class="nav-link" href="/about">
                 About
@@ -75,37 +39,29 @@ export default function Navbar() {
                 Contact
               </a>
             </li>
-
-            <li class="nav-item dropdown">
-              <a
-                class="nav-link dropdown-toggle"
-                href="#"
-                id="dropdown01"
-                data-bs-toggle="dropdown"
-                aria-expanded="false"
-              >
-                Settings
-              </a>
-              <ul
-                class="dropdown-menu dropdown-menu-dark"
-                aria-labelledby="dropdown01"
-              >
-                <li>
-                  <a class="dropdown-item" href="#">
+            <li className="nav-item dropdown">
+              <div class="dropdown">
+                <a
+                  class="nav-link dropdown-toggle"
+                  href="/"
+                  id="dropdownMenuButton"
+                  data-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  Select
+                </a>
+                <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                  <a class="dropdown-item" href="action1">
                     Action1
                   </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="action2">
                     Action2
                   </a>
-                </li>
-                <li>
-                  <a class="dropdown-item" href="#">
+                  <a class="dropdown-item" href="action3">
                     Action3
                   </a>
-                </li>
-              </ul>
+                </div>
+              </div>
             </li>
           </ul>
         </div>
