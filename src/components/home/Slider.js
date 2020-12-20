@@ -39,6 +39,13 @@ export default function Home() {
       title: "Fifth slide label",
       description: "A plate full of varieties",
     },
+    {
+      src:
+        "https://llandscapes-10674.kxcdn.com/wp-content/uploads/2019/07/lighting.jpg",
+      alt: "Sixth slide",
+      title: "Sixth slide label",
+      description: "Nature",
+    },
   ]);
   return (
     <div className="mt200">
