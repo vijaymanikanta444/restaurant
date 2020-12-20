@@ -1,4 +1,4 @@
-import React from 'react';
+import React from "react";
 // import TextGradient from 'react-textgradient';
 
 export default function Header() {
@@ -24,7 +24,7 @@ export default function Header() {
             </a>
           </div>
 
-          <div className="white langar  gradient logo-location">
+          <div className="langar  gradient logo-location">
             {/* <i className="fas fa-crown fs25 text-crown p-r1" /> */}
             <span className="fs50">ROYAL KITCHEN</span>
           </div>

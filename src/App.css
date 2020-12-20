@@ -59,15 +59,15 @@
 }
 
 .langar {
-  font-family: 'Langar', cursive;
+  font-family: "Langar", cursive;
 }
 
 .bungee {
-  font-family: 'Bungee Outline', cursive;
+  font-family: "Bungee Outline", cursive;
 }
 
 .exo2 {
-  font-family: 'Exo 2', sans-serif;
+  font-family: "Exo 2", sans-serif;
 }
 
 .locate {
@@ -100,7 +100,17 @@
 }
 
 .gradient {
-  background: linear-gradient(to right, #f19306, #e0da90);
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  background: linear-gradient(
+    to right,
+    #ff9a01,
+    #ff9a01,
+    #c4bd7a,
+    #f70909,
+    #f70909
+  );
   -webkit-text-fill-color: transparent;
   -webkit-background-clip: text;
 }
@@ -142,6 +152,11 @@
 
 .bb {
   border-bottom: 1px solid #f9ed22;
+}
+
+.bg {
+  background: #4d6985;
+  opacity: 0.5;
 }
 
 .containerSlide {
