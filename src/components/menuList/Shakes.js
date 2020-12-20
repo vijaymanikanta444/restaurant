@@ -4,7 +4,7 @@ export default class Shakes extends Component {
   render() {
     return (
       <div>
-        <h4>Shakes</h4>
+        <h4>Milk-Shakes</h4>
       </div>
     );
   }
