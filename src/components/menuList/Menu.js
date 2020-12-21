@@ -1,8 +1,9 @@
-import React, { Component } from "react";
-import Desserts from "./Desserts";
-import MainCourse from "./MainCourse";
-import Shakes from "./Shakes";
-import Starters from "./Starters";
+import React, { Component } from 'react';
+import Desserts from './Desserts';
+import MainCourse from './MainCourse';
+import Shakes from './Shakes';
+import Starters from './Starters';
+import Biryani from './Biryani';
 
 export default class Menu extends Component {
   render() {
@@ -12,6 +13,7 @@ export default class Menu extends Component {
         <div className="container">
           <Starters />
           <MainCourse />
+          <Biryani />
           <Desserts />
           <Shakes />
         </div>

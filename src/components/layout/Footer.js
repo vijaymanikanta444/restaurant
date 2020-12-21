@@ -1,10 +1,10 @@
-import React from "react";
+import React from 'react';
 
 export default function Footer() {
   return (
     <div className="App mt50">
       <div>
-        <div className="bg p5">
+        <div className="bg p5 ">
           <div className="fs25">
             <i className="fas fa-crown"></i>
             <span className="prl-20">ROYAL KITCHEN</span>

@@ -59,27 +59,27 @@
 }
 
 .langar {
-  font-family: "Langar", cursive;
+  font-family: 'Langar', cursive;
 }
 
 .bungee {
-  font-family: "Bungee Outline", cursive;
+  font-family: 'Bungee Outline', cursive;
 }
 
 .exo2 {
-  font-family: "Exo 2", sans-serif;
+  font-family: 'Exo 2', sans-serif;
 }
 
 .nova-flat {
-  font-family: "Nova Flat", cursive;
+  font-family: 'Nova Flat', cursive;
 }
 
 .alex-brush {
-  font-family: "Alex Brush", cursive;
+  font-family: 'Alex Brush', cursive;
 }
 
 .play {
-  font-family: "Play", sans-serif;
+  font-family: 'Play', sans-serif;
 }
 .locate {
   display: flex;
@@ -149,23 +149,51 @@
   margin-top: 190px;
 }
 
+.mt188 {
+  margin-top: 134px;
+}
+
 .mt10 {
   margin-top: 10px;
+}
+
+.mt20 {
+  margin-top: 20px;
 }
 
 .mt50 {
   margin-top: 50px;
 }
 
-.bb {
-  border-bottom: 1px solid #f9ed22;
+.mb10 {
+  margin-bottom: 10px;
 }
+
+.mb20 {
+  margin-bottom: 20px;
+}
+
+.mb50 {
+  margin-bottom: 50px;
+}
+
+/*.bb {
+  border-bottom: 1px solid #f9ed22;
+}*/
 
 .bg {
   background: #4d6985;
-  opacity: 0.5;
+}
+.bg p {
+  color: white;
 }
 
+.o5 {
+  opacity: 0.5;
+}
+.g {
+  text-overflow: inherit;
+}
 .containerSlide {
   /* width: 80%; */
   /* margin: auto; */
@@ -208,6 +236,13 @@
   /* background-color: white; */
 }
 
+.cards1:hover {
+  background: #394552;
+  border-radius: 10px;
+  /* opacity: 0.5; */
+  /* border: dotted 1px black; */
+}
+
 .card {
   width: 250px;
   padding: 5px;
@@ -222,6 +257,12 @@
   color: #000000;
   background: white;
   border-radius: 5px;
+  /* height: 100%; */
+}
+
+.card1:hover {
+  transform: scale(1.1);
+  color: red;
 }
 
 .green {
@@ -239,6 +280,7 @@
 button.rec-dot {
   background: none;
   box-shadow: 0 0 1px 3px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
 }
 
 button.rec-dot_active {
@@ -259,4 +301,28 @@ button.rec-arrow-left {
   box-shadow: none;
   background: none !important;
   color: #e8f8f5;
+}
+
+.br40 {
+  border-radius: 40px;
+}
+
+.progress-container {
+  width: 100%;
+  height: 2.5px;
+  background: #ccc;
+}
+
+.progress-bar {
+  height: 2.5px;
+  background: #4d6985;
+  width: 0%;
+}
+
+.active {
+  transform: scale(1.2);
+}
+
+.nav-link {
+  margin: 0 10px;
 }

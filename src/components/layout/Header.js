@@ -1,7 +1,20 @@
-import React from "react";
+import React from 'react';
 // import TextGradient from 'react-textgradient';
 
 export default function Header() {
+  window.onscroll = function () {
+    myFunction();
+  };
+  function myFunction() {
+    // var scrolled = 0;
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById('myBar').style.width = scrolled + '%';
+  }
   return (
     <div>
       <nav className="navbar navbar-expand-md navbar-dark fixed-top container-fluid bg-dark bb">
@@ -36,6 +49,9 @@ export default function Header() {
           </div>
         </div>
       </nav>
+      <div className="progress-container mt188 fixed-top">
+        <div className="progress-bar" id="myBar"></div>
+      </div>
     </div>
   );
 }

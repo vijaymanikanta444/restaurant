@@ -1,6 +1,6 @@
-import React from "react";
-import { Card } from "react-bootstrap";
-import Carousel from "react-elastic-carousel";
+import React from 'react';
+import { Card } from 'react-bootstrap';
+import Carousel from 'react-elastic-carousel';
 
 const breakPoints = [
   { width: 1, itemsToShow: 1 },
@@ -11,7 +11,7 @@ const breakPoints = [
 
 export default function ScrollX({ data }) {
   return (
-    <div className="App">
+    <div className="App mb10 mt10 p10">
       <div className="cards1">
         <Carousel breakPoints={breakPoints}>
           {data.map((starters, i) => (
@@ -23,23 +23,23 @@ export default function ScrollX({ data }) {
                 src={starters.img}
               />
               <Card.Body>
-                <Card.Title className="exo2">{starters.title}</Card.Title>
+                <Card.Title className="exo2 g">{starters.title}</Card.Title>
               </Card.Body>
               <Card.Footer>
                 <small className="text-muted">
                   <i
-                    style={{ paddingRight: "5px", color: "green" }}
+                    style={{ paddingRight: '5px', color: 'green' }}
                     className="fas fa-rupee-sign"
                   ></i>
                   <span
                     className="play"
-                    style={{ fontSize: "20px", color: "black" }}
+                    style={{ fontSize: '20px', color: 'black' }}
                   >
                     {starters.price}
                   </span>
                   <span
-                    style={{ paddingLeft: "10px" }}
-                    className={starters.category == "veg" ? "green" : "red"}
+                    style={{ paddingLeft: '10px' }}
+                    className={starters.category == 'veg' ? 'green' : 'red'}
                   >
                     <i className="far fa-dot-circle"></i>
                   </span>

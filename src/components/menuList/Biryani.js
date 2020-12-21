@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import ScrollX from './ScrollX';
 
-export default function Shakes() {
+export default function Desserts() {
   const [data, setdata] = useState([
     {
       img:
@@ -12,7 +12,7 @@ export default function Shakes() {
     {
       img:
         'https://www.cookshideout.com/wp-content/uploads/2014/11/Veg-Manchurian-Low-Fat-FI.jpg',
-      title: 'Manchuriya',
+      title: 'abcdefghijkl mnopqrstuvwxyz',
       price: '299',
     },
     {
@@ -61,7 +61,7 @@ export default function Shakes() {
   return (
     <div>
       <div className="bg p5 br40">
-        <h4 className="nova-flat App fs25">Milk-Shakes</h4>
+        <h4 className="nova-flat App fs25">Rice & Biryani's</h4>
       </div>
       <ScrollX data={data} />
     </div>
