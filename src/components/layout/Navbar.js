@@ -3,12 +3,33 @@ import { Link } from 'react-router-dom';
 
 export default function Navbar() {
   const [active, setactive] = useState('');
+
+  window.onscroll = function () {
+    myFunction();
+  };
+  function myFunction() {
+    // var scrolled = '0%';
+    // window.scrollTo(0, 0);
+    var winScroll =
+      document.body.scrollTop || document.documentElement.scrollTop;
+    var height =
+      document.documentElement.scrollHeight -
+      document.documentElement.clientHeight;
+    var scrolled = (winScroll / height) * 100;
+    document.getElementById('myBar').style.width = scrolled + '%';
+  }
+
   const onclick = (e) => {
     setactive(e.target.id);
+    window.onscroll();
   };
   console.log(active);
+
   return (
     <div>
+      <div className="progress-container mt188 fixed-top">
+        <div className="progress-bar" id="myBar"></div>
+      </div>
       <nav
         className="navbar navbar-expand-lg  navbar-dark bg-dark fixed-top container-fluid mt137"
         aria-label="Main navigation"
