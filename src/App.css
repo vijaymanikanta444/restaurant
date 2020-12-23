@@ -361,3 +361,8 @@ button.rec-arrow-left {
 .cardStyle button {
   background-color: rgb(59, 56, 56);
 }
+
+.content1 {
+  justify-content: center;
+  align-items: center;
+}

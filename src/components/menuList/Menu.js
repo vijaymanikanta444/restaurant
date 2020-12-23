@@ -1,23 +1,28 @@
-import React, { Component } from 'react';
-import Desserts from './Desserts';
-import MainCourse from './MainCourse';
-import Shakes from './Shakes';
-import Starters from './Starters';
-import Biryani from './Biryani';
+import React, { Component } from "react";
+import Desserts from "./Desserts";
+import MainCourse from "./MainCourse";
+import Shakes from "./Shakes";
+import Starters from "./Starters";
+import Biryani from "./Biryani";
+import ParallaxContent from "../layout/Parallax";
 
-export default class Menu extends Component {
-  render() {
-    return (
+export default function Menu() {
+  const img1 =
+    "https://img.freepik.com/free-psd/top-view-fast-food-black-background-mock-up_23-2148321326.jpg?size=626&ext=jpg";
+
+  return (
+    <div>
       <div className="container mt200">
         <h3>Menu : </h3>
-        <div className="container">
-          <Starters />
-          <MainCourse />
-          <Biryani />
-          <Desserts />
-          <Shakes />
-        </div>
       </div>
-    );
-  }
+      <ParallaxContent img1={img1} />
+      <div className="container">
+        <Starters />
+        <MainCourse />
+        <Biryani />
+        <Desserts />
+        <Shakes />
+      </div>
+    </div>
+  );
 }

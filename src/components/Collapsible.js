@@ -1,37 +1,8 @@
 import React, { useState } from "react";
 import { Accordion, Card, Button } from "react-bootstrap";
 
-export default function Collapsible({ title, description }) {
-  var coll = document.getElementsByClassName("collapsible");
-  var i;
-
-  for (i = 0; i < coll.length; i++) {
-    coll[i].addEventListener("click", function () {
-      this.classList.toggle("active");
-      var content = this.nextElementSibling;
-      if (content.style.display === "block") {
-        content.style.display = "none";
-      } else {
-        content.style.display = "block";
-      }
-    });
-  }
-
-  const [state, setstate] = useState("none");
-
-  const onclick = () => {
-    setstate(state == "none" ? "block" : "none");
-  };
+export default function Collapsible() {
   return (
-    // <div>
-    //   <button type="button" class="collapsible" onClick={onclick}>
-    //     {title}
-    //   </button>
-    //   <div className="content" style={{ display: state }}>
-    //     <p>{description}</p>
-    //   </div>
-    // </div>
-
     <Accordion>
       <Card className="cardStyle">
         <Card.Header>
