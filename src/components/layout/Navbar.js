@@ -1,8 +1,8 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Navbar() {
-  const [active, setactive] = useState('');
+  const [active, setactive] = useState("");
 
   window.onscroll = function () {
     myFunction();
@@ -16,7 +16,7 @@ export default function Navbar() {
       document.documentElement.scrollHeight -
       document.documentElement.clientHeight;
     var scrolled = (winScroll / height) * 100;
-    document.getElementById('myBar').style.width = scrolled + '%';
+    document.getElementById("myBar").style.width = scrolled + "%";
   }
 
   const onclick = (e) => {
@@ -38,7 +38,7 @@ export default function Navbar() {
           <Link className="navbar-brand" to="/" onClick={onclick} id="home">
             <i
               className={
-                active == 'home' ? 'active fas fa-home' : 'fas fa-home'
+                active == "home" ? "active fas fa-home" : "fas fa-home"
               }
             ></i>
           </Link>
@@ -58,7 +58,7 @@ export default function Navbar() {
             <ul className="navbar-nav me-auto mb-2 mb-lg-0">
               <li className="nav-item">
                 <Link
-                  className={active == 'menu' ? 'active nav-link' : 'nav-link'}
+                  className={active == "menu" ? "active nav-link" : "nav-link"}
                   to="/menu"
                   onClick={onclick}
                   id="menu"
@@ -69,7 +69,7 @@ export default function Navbar() {
 
               <li className="nav-item">
                 <Link
-                  className={active == 'about' ? 'active nav-link' : 'nav-link'}
+                  className={active == "about" ? "active nav-link" : "nav-link"}
                   to="/about"
                   onClick={onclick}
                   id="about"
@@ -80,7 +80,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   className={
-                    active == 'contact' ? 'active nav-link' : 'nav-link'
+                    active == "contact" ? "active nav-link" : "nav-link"
                   }
                   to="/contact"
                   onClick={onclick}
@@ -92,7 +92,7 @@ export default function Navbar() {
               <li className="nav-item">
                 <Link
                   className={
-                    active == 'specials' ? 'active nav-link' : 'nav-link'
+                    active == "specials" ? "active nav-link" : "nav-link"
                   }
                   to="/specials"
                   onClick={onclick}
@@ -101,7 +101,7 @@ export default function Navbar() {
                   Special's
                 </Link>
               </li>
-              <li className="nav-item dropdown">
+              {/* <li className="nav-item dropdown">
                 <div className="dropdown">
                   <Link
                     className="nav-link dropdown-toggle"
@@ -127,7 +127,7 @@ export default function Navbar() {
                     </Link>
                   </div>
                 </div>
-              </li>
+              </li> */}
             </ul>
           </div>
         </div>

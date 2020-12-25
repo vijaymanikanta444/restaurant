@@ -97,6 +97,10 @@
   background: #424949;
 }
 
+.bg-black {
+  background: #212529;
+}
+
 .shadow {
   color: white;
   text-shadow: 2px 2px 4px #000000;
@@ -321,6 +325,7 @@ button.rec-arrow-left {
 
 .active {
   transform: scale(1.2);
+  background: none;
 }
 
 .nav-link {
@@ -339,7 +344,6 @@ button.rec-arrow-left {
   font-size: 15px;
 }
 
-.active,
 .collapsible:hover {
   background-color: #555;
 }
@@ -365,4 +369,14 @@ button.rec-arrow-left {
 .content1 {
   justify-content: center;
   align-items: center;
+}
+
+accordion-button:not(.collapsed) {
+  color: black;
+  background-color: #e7f1ff;
+}
+
+.collapsed {
+  background: white;
+  color: black;
 }
